@@ -1,5 +1,8 @@
 @Library('jenkins-shared-library')_
 pipeline {
+options{
+timeout(3)
+}
     agent any
     tools {
         maven "Maven"   
